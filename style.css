@@ -1,0 +1,296 @@
+
+/* STYLES FOR NAVIGATION BAR WHICH IS PRESENT IN THE LEFT SIDE TOP CORNER OF THE WEBPAGE */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.navbar{
+background-color: #212121;
+text-decoration: none;
+
+
+}
+.navbar h1{
+    text-align: left;
+    color:#fff;
+    font-family: 'Oswald', sans-serif;
+
+}
+#nav-menu{
+    background-color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+    height:100vh;
+    width:220px;
+    padding:0;
+    border:0;
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left:-100%;
+    transition: 850ms;
+}
+.about{
+    color:#fff
+}
+
+hr{
+    background-color: #464646;
+    height:1px;
+    border:none;
+}
+.menu-bars{
+    color:antiquewhite;
+    font-size :2rem;
+
+}
+
+#nav-menu.active{
+    left:0 ;
+    transition:350ms
+}
+.nav-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height:40px;
+    padding:1rem;
+    list-style:none;
+    
+}
+.nav-text a{
+    color: #fff;
+    text-shadow: 5px 5px 10px black;
+    text-decoration: none;
+    font-size:1.2rem;
+     list-style-type: none;
+
+}
+
+
+.nav-text:hover{
+    cursor: pointer;
+    background-color: rgba(209, 209, 209, 0.219);
+    padding-left: 20px;
+}
+.nav-menu-items{
+   padding-left:15px;
+   width:100%;
+}
+.navbar-toggle{
+    display: flex;
+    align-items: center;
+}
+.nav-icon{
+padding-right:1rem;
+color:#909090
+}
+
+.youtube-logo{
+    color: #f90201;
+}
+.navbar-toggle h1{
+    color:#fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*  STYLES FOR SEARCHBAR */
+
+
+.text-place{
+    margin-left: 20px;
+    width:600px;
+    border:0.8px solid gray;
+    height:35px;
+    border-radius:5px;
+    border-bottom-left-radius: 15px;
+    
+    box-shadow: 5px 5px 20px rgb(2, 2, 2);
+}
+.search-form button{
+    
+    border:0px;
+    border-radius: 5px;
+    border-top-right-radius: 15px;
+    width: 100px;
+    height:33px;
+    margin:20px;
+    margin-left:0px;
+    box-shadow: 5px 5px 20px rgb(2, 2, 2);
+    background-color: rgb(255, 255, 255);
+    
+
+}
+.right-icons{
+    color:#fff ;
+    margin-right:30px;
+    text-shadow:5px 5px 20px rgb(2, 2, 2) ;
+}
+.right-icons:hover{
+    text-shadow: 0px 0px 10px rgb(219, 217, 217);
+    padding:2px;
+    transition: ease-in-out 0.2s;
+}
+#search-topics{
+    color:#fff ;
+    text-shadow:5px 5px 20px rgb(2, 2, 2);
+    display :flex;
+    
+    justify-content:space-between;
+    
+    
+}
+
+.small-tabs:hover{
+    cursor: pointer;
+    height: 34px;
+    margin:0px 10px;
+    display :flex;
+    align-items: center ;
+    transition: ease-in-out 0.2s;
+}
+
+span{
+    
+    box-shadow:5px 5px 20px rgb(2, 2, 2);
+    background-color: #979494;
+    width:auto;
+    padding:0px 10px;
+    height:30px;
+    text-align:center;
+    border-radius: 7px;
+    
+}
+
+/* STYLE FOR SAMPLE TAB */
+
+
+
+.sample{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+}
+label{
+    margin-right:20px;
+    margin-top: 5px;
+    text-shadow: 5px 5px 10px black;
+}
+input{
+    border-radius:10px;
+    border:0px;
+    padding-left: 15px;
+
+}
+#sample-title{
+margin: 5px;
+font-family: 'Righteous', cursive;;
+word-spacing: 10px;
+text-shadow: 5px 5px 10px black;
+font-size:x-large;
+}
+.line-top{
+    width:40px;
+    height:5px;
+    margin-top: 15px;
+    position: relative;
+    animation-name: lineTop;
+    border-radius: 5px;
+  animation-duration: 4s;
+  animation-iteration-count: 6;
+}
+
+@keyframes lineTop {
+  0%   {background-color:rgb(255, 72, 0); left:0px; top:0px;}
+  50%  {background-color:yellow; left:100%; top:0px;}
+  
+  100%  {background-color:rgb(255, 72, 0); left:0px; top:0px;right:200px}
+  
+}
+
+.line-bottom{
+    width:40px;
+    height:5px;
+    margin-top: 5px;
+    position: relative;
+    left:100%;
+
+    border-radius: 5px;
+    animation-name: lineBottom;
+  animation-duration: 4s;
+  animation-iteration-count: 6;
+  
+}
+
+@keyframes lineBottom {
+  0%   {background-color:rgb(255, 72, 0); left: 100%; bottom:100%;top:0px}
+  50%  {background-color:yellow; left:0%; top:0px;}
+  
+  100%  {background-color:rgb(255, 72, 0); left:100%px; bottom:100%;right:0px;top:0px}
+  
+}
+
+/* SEARCH-FEED */
+
+
+#searchFeed{
+    margin-top: 50px;
+}
+
+
+/* CSS FOR THUMBNAILS OF YOUTUBE FEED */
+
+
+
+.thumbnails{
+    height:200px;
+    width:100%;
+    object-fit: cover;
+    background-color: transparent;
+    border-radius:10px;
+
+}
+
+.col-md-4{
+    margin:20px 0px;
+    
+}
+.yt-feed:hover{
+    padding:5px ;
+    box-shadow: 5px 5px 10px black;
+    transition: ease-in-out 0.2s;
+    
+}
+.channel-logo-name{
+    margin-top:25px;
+    display:flex;
+}
+.channel-icon{
+    height :40px;
+    width:40px;
+    border-radius: 50%;
+}
+.about{
+    margin-left:8px;
+}
+
+
+/* PLAYLIST-BUTTON */
+
+#playlist-button{
+    border-radius: 10px;
+    text-decoration: none;
+    
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+   border-radius: 15px;
+   margin:20px 0px;
+}
+#playlist-button:hover{
+    box-shadow: 5px 5px 10px black;
+    transition: ease-in-out 0.2s;
+}
